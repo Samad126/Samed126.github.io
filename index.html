@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    main {
+      padding-top: 90px;
+    }
+
+    html {
+      /* To make use of full height of page*/
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      height: 100%;
+      margin: 0;
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    .general {
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      width: 375px;
+      margin: 0 auto;
+    }
+
+    .image {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    @media only screen and (min-width:1440px) {
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        /* To make use of full height of page*/
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .general {
+        display: flex;
+        width: 100%;
+      }
+
+      .information {
+        width: 50%;
+      }
+
+      main {
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .image {
+        width: 50%;
+      }
+    }
+
+    .information {
+      font-size: 14px;
+      padding: 15px;
+    }
+
+    .perfume {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(110, 110, 110);
+    }
+
+    .Gabrielle {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-bottom: 10px;
+      width: 85%;
+    }
+
+    .paragraph {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rgb(110, 110, 110);
+      width: 78%;
+      margin-bottom: 10px;
+    }
+
+    .prices {
+      display: flex;
+    }
+
+    .first-price {
+      font-size: 30px;
+      color: green;
+      font-weight: bold;
+      width: 40%;
+      margin-bottom: 10px;
+    }
+
+    .cart {
+      background-color: hsl(212, 21%, 14%);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      padding: 10px 50px 10px 50px;
+      cursor: pointer;
+    }
+
+    .center {
+      display: block;
+      margin: auto;
+      max-width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="general">
+      <img class="image" src="images/image-product-mobile.jpg" alt="">
+      <div class="information">
+        <p class="perfume">P E R F U M E</p>
+        <h1 class="Gabrielle">Gabrielle Essence Eau De Parfum</h1>
+        <p class="paragraph">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
+          for the House of CHANEL.</p>
+        <div class="prices">
+          <p class="first-price">$149.99</p>
+          <p class="second-price"><del>$169.99</del></p>
+        </div>
+        <div class="center">
+          <button class="cart" data-order="parfume">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
